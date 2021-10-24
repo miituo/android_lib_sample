@@ -26,10 +26,21 @@ authToken=jp_skpbrvh8a8nnods7876sp6j0bm
 Finalmente agregamos la dependecia
 
 ```
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        ...
+        
 dependencies {
-implementation 'com.github.miituo:android_libs:0.2.2'
+implementation 'com.github.miituo:android_libs:0.4.0'
 ...
 ```
+## IMPORTANTE:
+La versión 0.4.0 corre apartir del target 30 de android, para versiones anteriores, seguir usando la version 0.3.91
 
 ## Uso:
 
